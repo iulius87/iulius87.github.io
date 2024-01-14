@@ -59,112 +59,112 @@ const domande = [
             txt: "andare con l’unità di strada a distribuire un pasto caldo e fare compagnia a chi vive in strada",
             val: "D"
         }]
-    }/*,{
-        domanda: "",
+    },{
+        domanda: "Se dov’esse esserci un altro te a questo mondo, vorresti che fosse una persona",
         risposte: [{
-            txt: "",
-            val: ""
+            txt: "sensibile e sempre pronta a rendersi utile",
+            val: "D"
         },{
-            txt: "",
-            val: ""
+            txt: "romantica ed entusiasta",
+            val: "B"
         },{
-            txt: "",
-            val: ""
+            txt: "coraggiosa e impegnata",
+            val: "C"
         },{
-            txt: "",
-            val: ""
+            txt: "atletica e avventurosa",
+            val: "A"
         }]
     },{
-        domanda: "",
+        domanda: "In questo momento della mia vita vorrei…",
         risposte: [{
-            txt: "",
-            val: ""
+            txt: "conoscermi meglio e trovare un modo per esprimermi",
+            val: "B"
         },{
-            txt: "",
-            val: ""
+            txt: "scappare nella città e rifugiarmi nei boschi",
+            val: "A"
         },{
-            txt: "",
-            val: ""
+            txt: "rendermi veramente utile al prossimo",
+            val: "D"
         },{
-            txt: "",
-            val: ""
+            txt: "capire cosa posso fare per migliorare questo mondo",
+            val: "C"
         }]
     },{
-        domanda: "",
+        domanda: "Quale di queste scuse i tuoi amici troverebbero meno credibile “scusa, non ci sono, devo …",
         risposte: [{
-            txt: "",
-            val: ""
+            txt: "andare a votare",
+            val: "C"
         },{
-            txt: "",
-            val: ""
+            txt: "aiutare mia nonna che la badante è in ferie",
+            val: "D"
         },{
-            txt: "",
-            val: ""
+            txt: "farmi lo zaino per la route",
+            val: "A"
         },{
-            txt: "",
-            val: ""
+            txt: "andare a messa",
+            val: "B"
         }]
     },{
-        domanda: "",
+        domanda: "Il gesto romantico per eccellenza è",
         risposte: [{
-            txt: "",
-            val: ""
+            txt: "scrivere e cantare una serenata sotto la finestra",
+            val: "B"
         },{
-            txt: "",
-            val: ""
+            txt: "essere difesi con un discorso accorato da una folla inferocita e armata di forconi",
+            val: "C"
         },{
-            txt: "",
-            val: ""
+            txt: "essere portati in spalla dopo essersi slogati una caviglia",
+            val: "D"
         },{
-            txt: "",
-            val: ""
+            txt: "una passeggiata al chiaro di luna a guardare le stelle cadenti",
+            val: "A"
         }]
     },{
-        domanda: "",
+        domanda: "Il mio motto è",
         risposte: [{
-            txt: "",
-            val: ""
+            txt: "sulle cime più alte ci si rende conto che la neve, il cielo e l’oro hanno lo stesso valore",
+            val: "A"
         },{
-            txt: "",
-            val: ""
+            txt: "il modo vero di essere felici è rendere felici gli altri",
+            val: "D"
         },{
-            txt: "",
-            val: ""
+            txt: "ci impegniamo perché non potremmo non impegnarci",
+            val: "C"
         },{
-            txt: "",
-            val: ""
+            txt: "il cuore degli stolti sta sulla loro bocca, mentre bocca dei saggi è il loro cuore",
+            val: "B"
         }]
     },{
-        domanda: "",
+        domanda: "Non so se prenderò mai la partenza, ma sicuramente per me un grande ostacolo sarà",
         risposte: [{
-            txt: "",
-            val: ""
+            txt: "la scelta politica",
+            val: "C"
         },{
-            txt: "",
-            val: ""
+            txt: "farmi ancora un’altra route",
+            val: "A"
         },{
-            txt: "",
-            val: ""
+            txt: "la scelta di fede",
+            val: "B"
         },{
-            txt: "",
-            val: ""
+            txt: "quale servizio farò dopo",
+            val: "D"
         }]
     },{
-        domanda: "",
+        domanda: "Sì, bello il clan, ma ci vorrebbe un po’ più di",
         risposte: [{
-            txt: "",
-            val: ""
+            txt: "tempo per dare una mano",
+            val: "D"
         },{
-            txt: "",
-            val: ""
+            txt: "impegno politico e dibattito",
+            val: "C"
         },{
-            txt: "",
-            val: ""
+            txt: "gioia e condivisione autentica",
+            val: "B"
         },{
-            txt: "",
-            val: ""
+            txt: "spirito di avventura",
+            val: "A"
         }]
-    }*/
+    }
 ];
 
 const risposte = {
@@ -262,4 +262,13 @@ function showResults() {
         <td onclick="location.reload()"><span id="reload">↺</span><br>Ripeti il quiz</td>
     </tr></table>    
     `;
+}
+
+function saveData() {
+    const call = new XMLHttpRequest();
+    call.open('GET','epppisave.php');
+    call.send();
+    call.onload = e => {
+        console.log(call.response);
+    };
 }
