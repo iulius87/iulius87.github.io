@@ -255,7 +255,7 @@ function showResults() {
             <br>Guarda tutti gli EPPPI della regione
             </a></td>
         <td>
-            <a href="https://buonacaccia.net/Events.aspx?CID=33">
+            <a href="https://buonacaccia.net/Events.aspx?RID=F&CID=33">
             <img src="BCnavbar.png" title="Iscriviti ora!">
             <br>Iscriviti ora!
             </a></td>
