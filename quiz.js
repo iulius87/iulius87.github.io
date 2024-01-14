@@ -237,10 +237,29 @@ function showResults() {
             risposta.body = "Sei un faro di positività nella vita di chi ti circonda. La tua dedizione nel rendere felici le persone intorno a te è davvero contagiosa. Ami donare gioia e sorrisi, e la tua presenza è come un raggio di sole che illumina il giorno di chiunque ti incontri. Cerchi sempre nuove occasioni per vivere al meglio la tua scelta di servizio e quindi non ti lascerai sfuggire l'opportunità di vivere un EPPPI di servizio!";
             break;
     }
-    let tit = document.createElement('h3');
+    let img = document.createElement('img');
+    img.setAttribute('src',`${best}.jpg`);
+    img.setAttribute('height',200);
+    let tit = document.createElement('h1');
     tit.textContent = risposta.title;
     let bod = document.createElement('p');
     bod.textContent = risposta.body;
+    qe.appendChild(img);
     qe.appendChild(tit);
     qe.appendChild(bod);
+    qe.innerHTML += `
+    <table><tr>
+        <td>
+            <a href="https://emiro.agesci.it/wp-content/uploads/2024/01/Volantino-EPPPI-2024-v1.pdf">
+            <img src="logoeppiemiro.png" title="Guarda tutti gli EPPPI della regione" height="100">
+            <br>Guarda tutti gli EPPPI della regione
+            </a></td>
+        <td>
+            <a href="https://buonacaccia.net/Events.aspx?CID=33">
+            <img src="BCnavbar.png" title="Iscriviti ora!">
+            <br>Iscriviti ora!
+            </a></td>
+        <td onclick="location.reload()"><span id="reload">↺</span><br>Ripeti il quiz</td>
+    </tr></table>    
+    `;
 }
