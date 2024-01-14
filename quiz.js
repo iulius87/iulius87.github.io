@@ -180,21 +180,25 @@ function cleanQuestion() {
 
 function loadQuestion(n) {
     let qe = document.getElementById('question');
-    let q = document.createElement('p');
+    let q = document.createElement('h1');
     q.textContent = domande[n].domanda;
     qe.appendChild(q);
     let table = document.createElement('table');
     table.setAttribute('name','question' + n);
+    let rr,rc,rb;
     for (let ans in domande[n].risposte) {
-        let rr = document.createElement('tr');
-        let rc = document.createElement('td');
-        let rb = document.createElement('input');
-        rb.setAttribute('type','button');
-        rb.setAttribute('value',domande[n].risposte[ans].txt);
+        if (ans%2 == 0) {
+            rr = document.createElement('tr');
+        }        
+        rc = document.createElement('td');
+        rb = document.createElement('div');
+        rb.textContent = domande[n].risposte[ans].txt;
         rb.setAttribute('onclick',`getAnswer(${n},"${domande[n].risposte[ans].val}")`);
         rc.appendChild(rb);
         rr.append(rc);
-        table.appendChild(rr);
+        if (ans%2 == 1) {
+            table.appendChild(rr);
+        }
     }
     qe.appendChild(table);
 }

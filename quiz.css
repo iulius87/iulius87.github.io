@@ -1,0 +1,29 @@
+body {
+    background-color: red;
+}
+
+#question {
+    background-color: lightcoral;
+    border: solid black;
+    text-align: center;
+    align-items: center;
+}
+
+#question table {
+    color: black;
+    width: 100%
+}
+
+#question table td {
+    max-width: 100%;
+    /* padding: 5%; */
+}
+
+#question table div {
+    padding: 10%;
+    border: solid darkred;
+    background-color: red;
+    color: lightyellow;
+    border-radius: 30%;
+    font-size: 130%;
+}
