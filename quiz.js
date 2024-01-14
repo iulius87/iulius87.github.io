@@ -180,11 +180,11 @@ function cleanQuestion() {
 
 function loadQuestion(n) {
     let qe = document.getElementById('question');
-    let q = document.createElement('h1');
+    let q = document.createElement('h2');
     q.textContent = domande[n].domanda;
     qe.appendChild(q);
     let table = document.createElement('table');
-    table.setAttribute('name','question' + n);
+    table.setAttribute('class','question');
     let rr,rc,rb;
     for (let ans in domande[n].risposte) {
         if (ans%2 == 0) {
@@ -239,7 +239,7 @@ function showResults() {
     }
     let img = document.createElement('img');
     img.setAttribute('src',`${best}.jpg`);
-    img.setAttribute('height',200);
+    img.setAttribute('height',300);
     let tit = document.createElement('h1');
     tit.textContent = risposta.title;
     let bod = document.createElement('p');
@@ -248,7 +248,7 @@ function showResults() {
     qe.appendChild(tit);
     qe.appendChild(bod);
     qe.innerHTML += `
-    <table><tr>
+    <table class="footer"><tr style="zoom: 1.5">
         <td>
             <a href="https://emiro.agesci.it/wp-content/uploads/2024/01/Volantino-EPPPI-2024-v1.pdf">
             <img src="logoeppiemiro.png" title="Guarda tutti gli EPPPI della regione" height="100">
