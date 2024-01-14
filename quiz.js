@@ -263,12 +263,3 @@ function showResults() {
     </tr></table>    
     `;
 }
-
-function saveData() {
-    const call = new XMLHttpRequest();
-    call.open('GET','epppisave.py');
-    call.send();
-    call.onload = e => {
-        console.log(call.response);
-    };
-}
