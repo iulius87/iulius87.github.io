@@ -266,7 +266,7 @@ function showResults() {
 
 function saveData() {
     const call = new XMLHttpRequest();
-    call.open('GET','epppisave.php');
+    call.open('GET','epppisave.py');
     call.send();
     call.onload = e => {
         console.log(call.response);
