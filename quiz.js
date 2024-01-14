@@ -80,7 +80,7 @@ const domande = [
             txt: "conoscermi meglio e trovare un modo per esprimermi",
             val: "B"
         },{
-            txt: "scappare nella città e rifugiarmi nei boschi",
+            txt: "scappare dalla città e rifugiarmi nei boschi",
             val: "A"
         },{
             txt: "rendermi veramente utile al prossimo",
