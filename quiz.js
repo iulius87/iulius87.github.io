@@ -60,7 +60,7 @@ const domande = [
             val: "D"
         }]
     },{
-        domanda: "Se dov’esse esserci un altro te a questo mondo, vorresti che fosse una persona",
+        domanda: "Se dovesse esserci un altro te a questo mondo, vorresti che fosse una persona",
         risposte: [{
             txt: "sensibile e sempre pronta a rendersi utile",
             val: "D"
