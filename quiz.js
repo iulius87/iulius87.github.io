@@ -250,7 +250,7 @@ function showResults() {
     qe.innerHTML += `
     <table class="footer"><tr style="zoom: 1.5">
         <td>
-            <a href="https://emiro.agesci.it/wp-content/uploads/2024/01/EPPPI2023-24vol-comuneDIGITALE-DEFINITIVO.pdf">
+            <a href="https://emiro.agesci.it/wp-content/uploads/2025/01/2025_volantino_interregionale_epppi_R01_digitale.pdf">
             <img src="logoeppiemiro.png" title="Guarda tutti gli EPPPI della regione" height="100">
             <br>Guarda tutti gli EPPPI della regione
             </a></td>
